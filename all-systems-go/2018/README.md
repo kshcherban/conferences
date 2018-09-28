@@ -9,14 +9,14 @@ and users of projects that make up the foundation of modern Linux systems.
 ## TOC
 
 * [Friday](#friday-28-september)
-    1. [Functional resource control using cgroup2](#Functional-resource-control-using cgroup2)
-    1. [From physical to cloud to container One system to manage them all](#From-physical-to-cloud-to-container-One-system-to-manage-them-all)
-    1. [Playing with casync @Instagram](#Playing-with-casync-@Instagram)
-    1. [Fluent Bit: Solving Logging Challenges for Cloud Native Environments](#Fluent-Bit-Solving-Logging-Challenges-for-Cloud-Native-Environments)
-    1. [Cilium Bringing the BPF Revolution to Kubernetes Networking and Security](#Cilium-Bringing-the-BPF-Revolution-to-Kubernetes-Networking-and-Security)
-    1. [Container Run times and Fun times](#Container-Run-times-and-Fun-times)
-    1. [Portable Services are Ready to Use](#Portable-Services-are-Ready-to-Use)
-    1. [Is my system fast?](#Is-my-system-fast?)
+    * [Functional resource control using cgroup2](#Functional-resource-control-using-cgroup2)
+    * [From physical to cloud to container One system to manage them all](#From-physical-to-cloud-to-container-One-system-to-manage-them-all)
+    * [Playing with casync @Instagram](#Playing-with-casync-@Instagram)
+    * [Fluent Bit: Solving Logging Challenges for Cloud Native Environments](#Fluent-Bit-Solving-Logging-Challenges-for-Cloud-Native-Environments)
+    * [Cilium Bringing the BPF Revolution to Kubernetes Networking and Security](#Cilium-Bringing-the-BPF-Revolution-to-Kubernetes-Networking-and-Security)
+    * [Container Run times and Fun times](#Container-Run-times-and-Fun-times)
+    * [Portable Services are Ready to Use](#Portable-Services-are-Ready-to-Use)
+    * [Is my system fast?](#Is-my-system-fast?)
 
 # Friday 28 September
 
