@@ -15,8 +15,8 @@ and users of projects that make up the foundation of modern Linux systems.
     * [Fluent Bit: Solving Logging Challenges for Cloud Native Environments](#Fluent-Bit-Solving-Logging-Challenges-for-Cloud-Native-Environments)
     * [Cilium Bringing the BPF Revolution to Kubernetes Networking and Security](#Cilium-Bringing-the-BPF-Revolution-to-Kubernetes-Networking-and-Security)
     * [Container Run times and Fun times](#Container-Run-times-and-Fun-times)
-    * [Portable Services are Ready to Use](#Portable-Services-are-Ready-to-Use)
-    * [Is my system fast?](#Is-my-system-fast?)
+    * [Portable Services are Ready to Use](#portable-services-are-ready-to-use)
+    * [Is my system fast?](#is-my-system-fast?)
 
 # Friday 28 September
 
