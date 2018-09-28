@@ -9,14 +9,14 @@ and users of projects that make up the foundation of modern Linux systems.
 ## TOC
 
 * [Friday](#friday-28-september)
-    * [Functional resource control using cgroup2](#Functional-resource-control-using-cgroup2)
-    * [From physical to cloud to container One system to manage them all](#From-physical-to-cloud-to-container-One-system-to-manage-them-all)
-    * [Playing with casync @Instagram](#Playing-with-casync-@Instagram)
-    * [Fluent Bit: Solving Logging Challenges for Cloud Native Environments](#Fluent-Bit-Solving-Logging-Challenges-for-Cloud-Native-Environments)
-    * [Cilium Bringing the BPF Revolution to Kubernetes Networking and Security](#Cilium-Bringing-the-BPF-Revolution-to-Kubernetes-Networking-and-Security)
-    * [Container Run times and Fun times](#Container-Run-times-and-Fun-times)
+    * [Functional resource control using cgroup2](#functional-resource-control-using-cgroup2)
+    * [From physical to cloud to container One system to manage them all](#from-physical-to-cloud-to-container-one-system-to-manage-them-all)
+    * [Playing with casync @Instagram](#playing-with-casync-@instagram)
+    * [Fluent Bit: Solving Logging Challenges for Cloud Native Environments](#fluent-bit-solving-logging-challenges-for-cloud-native-environments)
+    * [Cilium Bringing the BPF Revolution to Kubernetes Networking and Security](#cilium-bringing-the-bpf-revolution-to-kubernetes-networking-and-security)
+    * [Container Run times and Fun times](#container-run-times-and-fun-times)
     * [Portable Services are Ready to Use](#portable-services-are-ready-to-use)
-    * [Is my system fast?](#is-my-system-fast?)
+    * [Is my system fast?](#is-my-system-fast)
 
 # Friday 28 September
 
@@ -197,7 +197,7 @@ Build tool: `mkosi`
 ![systemd](systemd.JPG)
 
 
-## Is my system fast?
+## Is my system fast
 
 > Frank Becker @Amazon
 
