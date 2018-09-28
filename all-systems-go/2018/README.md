@@ -6,6 +6,17 @@ and users of projects that make up the foundation of modern Linux systems.
 
 ![registration](registration.JPG)
 
+## TOC
+
+* [Friday](#friday-28-september)
+    1. [Functional resource control using cgroup2](#Functional-resource-control-using cgroup2)
+    1. [From physical to cloud to container One system to manage them all](#From-physical-to-cloud-to-container-One-system-to-manage-them-all)
+    1. [Playing with casync @Instagram](#Playing-with-casync-@Instagram)
+    1. [Fluent Bit: Solving Logging Challenges for Cloud Native Environments](#Fluent-Bit-Solving-Logging-Challenges-for-Cloud-Native-Environments)
+    1. [Cilium Bringing the BPF Revolution to Kubernetes Networking and Security](#Cilium-Bringing-the-BPF-Revolution-to-Kubernetes-Networking-and-Security)
+    1. [Container Run times and Fun times](#Container-Run-times-and-Fun-times)
+    1. [Portable Services are Ready to Use](#Portable-Services-are-Ready-to-Use)
+    1. [Is my system fast?](#Is-my-system-fast?)
 
 # Friday 28 September
 
@@ -43,7 +54,9 @@ leaks will not bring system down.
     * workload
     * system
 
-### Results Mmmory protections work much better than OOM killer
+### Results
+
+Memory protections work much better than OOM killer
 
 IO protections work slightly better on HDDs but much better on SSDs
 
@@ -87,7 +100,7 @@ Not using docker because of lots of deploys and overhead that it brings.
 ![casync at instagram](casync.JPG)
 
 
-## Fluent Bit: Solving Logging Challenges for Cloud Native Environments
+## Fluent Bit Solving Logging Challenges for Cloud Native Environments
 
 > Eduardo Silva
 
@@ -107,7 +120,7 @@ k8s
 https://github.com/fluent/fluent-bit
 
 
-## Cilium - Bringing the BPF Revolution to Kubernetes Networking and Security
+## Cilium Bringing the BPF Revolution to Kubernetes Networking and Security
 
 > Thomas Graf
 
@@ -121,8 +134,8 @@ Funny quote about iptables
 
 ![cilium](cilium.JPG)
 
-cilium a local agent that generates a BPF program and attach it to pod.  Mode
-1: encapsulation, mode 2 direct routing
+cilium a local agent that generates a BPF program and attach it to pod.
+Mode 1: encapsulation, Mode 2 direct routing
 
 BPF-based - per-CPU hash table
 
@@ -134,7 +147,7 @@ https://cilium.io/
 ![bpf](bpf.JPG)
 
 
-## Container Run-times and Fun-times
+## Container Run times and Fun times
 
 > Lindsay Salisbury @facebook
 
