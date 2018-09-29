@@ -21,6 +21,7 @@ and users of projects that make up the foundation of modern Linux systems.
     * [Container Runtimes draw some lines](#container-runtimes-draw-some-lines)
     * [Passive filesystem verification](#passive-filesystem-verification)
     * [Replacing Docker with Podman](#replacing-docker-with-podman)
+    * [Netboot21 bootloader of the 21st century](#netboot21-bootloader-of-the-21st-century)
 
 
 # Friday 28 September
@@ -427,4 +428,26 @@ Don't support:
 * volumes
 
 https://github.com/containers/libpod
+
+
+## Netboot21 bootloader of the 21st century
+
+> Chris Koch
+
+Sick of insecure PXE booting over TFTP? Come learn about our efforts to write
+modern boot loaders in Linux's user space.
+
+LinuxBoot is a project to put Linux kernels into firmware. LinuxBoot means we
+have the full toolset of modern languages like Go at our fingertips: let's use
+them! We can now easily develop boot loaders with trivial support for HTTPS-,
+gRPC- or TPM-based network booting.
+
+UEFI ecosystem is flawed, lots of unused outdated modules, 20-30 different
+vendors involved. Vulnerabilities are not fixed. Boot is slow.
+
+For Winterfell Server Firmware linuxboot reduced boot time from 8mins to 20s.
+
+https://github.com/u-root
+
+All the toolset is written in Golang. One big go binary with all the tools.
 
