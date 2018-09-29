@@ -20,6 +20,7 @@ and users of projects that make up the foundation of modern Linux systems.
 * [Saturday](#saturday-29-september)
     * [Container Runtimes draw some lines](#container-runtimes-draw-some-lines)
     * [Passive filesystem verification](#passive-filesystem-verification)
+    * [Replacing Docker with Podman](#replacing-docker-with-podman)
 
 
 # Friday 28 September
@@ -339,4 +340,91 @@ Grafeas, Kritis, in-toto, Clair, Micro Scanner, TUF, and Notary are covered,
 and we demo how to gate container image pipelines and deployments on
 cryptographically verified supply chain metadata.
 
+Problems:
+* vulnerabilities in dependencies
+* deliberate backdoors
+* compromised downloads
+
+hermetic builds, isolated build env
+reproducible builds, only helps security if you actually do reproduce it
+
+runtime configuration - adherence to PodSecurityPolicy and Kubesec risk based
+on runtime configuration of the images that comprise a pod.
+
+Controlled base images, static analysis of code.
+
+Tools to solve problems.
+
+Update framework (TUF), notary project.
+
+Clair, auqa microscanner, anchore - image scanning projects.
+
+**Grafeas** project to audit & govern the software supply chain. https://grafeas.io
+
+**in-toto** a framework to provide whole supply chain security.
+
+
+## TAPS API for networks
+
+> Theresa Enghardt
+
+Is a draft for paths, networks selections. Provides API for applications?
+to select better or specified network connection, i.e. with lowest latency and
+not cellular.
+
+Apple Network.framework.
+
+
+## Desktop Linux Platform Issues
+
+> Simon Peter
+
+Developers need dependable platform. All successful OS distributions are platforms.
+
+Linux distributions break userspace.
+
+Systemd to manage desktop applications, database of apps, MIME types, handle
+multiple versions, etc.
+
+https://gitlab.com/probono/platformissues
+
+
+## Replacing Docker with Podman
+
+> Dan Walsh
+
+This talk will describe all of the reasons for podman, all of its features
+demonstrate its functionality,
+
+I will cover the background of podman, how we built it, why we built it,
+I will demonstrate using it in multiple different ways,
+Running containers
+building container images
+Communicating with it via var link, cockpit integration.
+Communicating with it from a remote machine.
+
+Hates docker for unknown reasons.
+
+Docker deamon became fat, containers are childs of this deamon.
+podman replaces docker cli.
+
+Can be executed without root. Nice.
+
+`buildah` is used to build images with podman. Also doesn't require root.
+
+When using user namespaces it chowns filesystem of the image on the fly :(
+
+Podman has proper systemd integration. Can run systemd inside pod.
+
+Has API, python bindings, cockpit support.
+
+Don't support:
+* containers autostart
+* swarm
+* notary
+* healthchecks
+* docker api
+* volumes
+
+https://github.com/containers/libpod
 
