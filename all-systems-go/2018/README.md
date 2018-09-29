@@ -17,6 +17,10 @@ and users of projects that make up the foundation of modern Linux systems.
     * [Container Run times and Fun times](#container-run-times-and-fun-times)
     * [Portable Services are Ready to Use](#portable-services-are-ready-to-use)
     * [Is my system fast?](#is-my-system-fast)
+* [Saturday](#saturday-29-september)
+    * [Container Runtimes draw some lines](#container-runtimes-draw-some-lines)
+    * [Passive filesystem verification](#passive-filesystem-verification)
+
 
 # Friday 28 September
 
@@ -242,5 +246,97 @@ Network performance:
 * latency
 
 CPU jitter - Sloarflare sysjitter
+
+
+# Saturday 29 September
+
+## Container Runtimes draw some lines
+
+> Vincent Batts
+
+Future of connecting to the container runtime as docker phases out
+
+Since docker came on the scene in 2013, for many it was the first they'd heard
+of containers. They existed before, and an have exploded since then. Today if
+you intend on running containers in production it means at the kubernetes
+level, though what is happening below that? what does this mean for direct
+access and on-going developer experience?
+
+systemd-nspawn, lxc - history of containerization.
+
+lmctfy - let me container that for you
+https://github.com/google/lmctfy
+
+rkt, Dec 2014, spec-first design (appC spec)
+
+OCI spec appeared in 2015, image and runtime in 2017, distribution spec 2018
+
+Different runtimes:
+* cri-o started in 2016, mainly for k8s
+* alibaba/pouch - yet another container runtime https://github.com/alibaba/pouch
+* oracle/railcar - written in rust, https://github.com/oracle/railcar
+* nvidia fork of runc
+* google/gvisor
+
+Link to presentation https://github.com/vbatts/talks/tree/master/2018/09/asg-container_runtimes
+
+
+## Passive filesystem verification
+
+> Vincent Batts
+
+A more generic approach to ensure you have what you'd expect to have
+
+A side effect of the many new ways to package filesystems (here's looking at
+you, containers!), is that filesystems are being copied around without many of
+the features that traditional packaging provided (i.e. `rpm -qV ...`). Much
+progress has been made for reproducible digests of containers. In this talk
+Vincent Batts will review options for distributing filesystems with
+reproducibility, and verifying the at-rest outcomes.
+
+Agenda:
+* packaging
+* content addressibility
+* compression
+* reproducible archives
+* verify at rest
+
+Before docker 1.8 layers ids were garbage.
+
+Go used inconsistent compression algorithms, builds were not reproducible.
+After go added some architecture improvements, all images were invalid.
+
+Image verification:
+
+* mtree port to linux
+* go-mtree
+* libarchive-formats
+* casync-mtree
+* umoci unpack (https://github.com/openSUSE/umoci/blob/master/cmd/umoci/unpack.go)
+
+Link to presentation https://github.com/vbatts/talks/tree/master/2018/09/asg-passive_fs_validation
+
+
+## The State of Your Supply Chain
+
+> Andrew Martin
+
+Container security often focuses on runtime best-practices whilst neglecting
+delivery of the software in the supply chain. Application, library, and OS
+vulnerabilities are a likely route to data exfiltration, and emerging
+technologies in the container ecosystem offer a new opportunity to mitigate
+this risk.
+
+Treating containers as immutable artefacts and injecting configuration allows
+us to "upgrade" images by rebuilding and shipping whole software bundles,
+avoiding configuration drift and state inconsistencies. This makes it possible
+to constantly patch software, and to easily enforce governance of artefacts
+both pre- and post-deployment.
+
+In this talk we detail an ideal, security-hardened container supply chain,
+describe the current state of the ecosystem, and dig into specific tools.
+Grafeas, Kritis, in-toto, Clair, Micro Scanner, TUF, and Notary are covered,
+and we demo how to gate container image pipelines and deployments on
+cryptographically verified supply chain metadata.
 
 
