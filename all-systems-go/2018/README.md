@@ -22,6 +22,7 @@ and users of projects that make up the foundation of modern Linux systems.
     * [Passive filesystem verification](#passive-filesystem-verification)
     * [Replacing Docker with Podman](#replacing-docker-with-podman)
     * [Netboot21 bootloader of the 21st century](#netboot21-bootloader-of-the-21st-century)
+* [Conclusions](#conclusions)
 
 
 # Friday 28 September
@@ -451,3 +452,15 @@ https://github.com/u-root
 
 All the toolset is written in Golang. One big go binary with all the tools.
 
+
+# Conclusions
+
+Organization of the conference was not good. Location was not marked properly with pointers, one of two rooms was too
+bright to see projector image, slides were barely readable, no free food.
+
+In terms os speakers and audience it was cool. Lots of core developers of
+popular open source projects, community is nice.
+
+Unfortunately conference is not very popular, there were around 200-300 attendants.
+
+I would rate it 7 of 10.
